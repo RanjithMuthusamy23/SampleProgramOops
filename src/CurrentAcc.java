@@ -1,7 +1,7 @@
 public class CurrentAcc extends Transactions {
     void debit(int amt){
-        if(balance - amt > 1000){
-            balance -=amt;
+        if(getBalance() - amt > 1000){
+            setBalance(getBalance() - amt);
             System.out.println("Amount debited");
             checkBalance();
             addStatements(-amt);

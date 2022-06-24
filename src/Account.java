@@ -1,7 +1,8 @@
 public class Account {
 
-    String acc_no,name,place,contact,pin,acc_type;
-    int balance,st_count=0;
+    private String acc_no,name,place,contact,pin,acc_type;
+    private int balance;
+    int st_count=0;
     int[] statements = new int[100];
     public String getAcc_no() {
         return acc_no;
